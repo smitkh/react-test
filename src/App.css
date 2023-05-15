@@ -1,0 +1,128 @@
+.todo-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-button,
+.save-button,
+.cancel-button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover,
+.save-button:hover,
+.cancel-button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-height: calc(100vh - 200px);
+  height: 100%;
+  overflow: auto;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task.completed {
+  background-color: #f2f2f2;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+}
+.task input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.task span {
+  flex: 1;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.button-group {
+  margin-left: auto;
+}
+
+.edit-button,
+.delete-button {
+  padding: 5px 10px;
+  background-color: #e6e6e6;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+  background-color: rgb(85, 85, 234);
+  color: white;
+}
+.delete-button:hover {
+  background-color: rgb(223, 112, 112);
+  color: white;
+}
+
+.incomplete-count {
+  text-align: center;
+  margin-top: 10px;
+  color: #555;
+  font-weight: 700;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #ebeaea;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #9a9494;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9a9494;
+}
